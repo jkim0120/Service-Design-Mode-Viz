@@ -66,7 +66,8 @@ var jkmode = {
       // Optional
       title = o["title"] || queryName,
       colorRange = o["color_range"] || ["#e41a1c", "#377eb8", "#4daf4a", "#984ea3", "#ff7f00", "#ffff33", "#a65628", "#f781bf", "#999999"],
-      htmlElement = o["html_element"] || "body";
+      htmlElement = o["html_element"] || "body",
+      ofTotalInteraction = o["of_total_interaction"] || "Total Support Interactions";
 
     var data = jkmode.getDataFromQuery(queryName);
 
@@ -144,7 +145,7 @@ var jkmode = {
       .attr("class", "mode-sunburst-explanation mode-sunburst-explanation-" + id)
       .attr("id", "of-total-interactions-" + id)
       .style("visibility", "hidden")
-      .text("of Total Support Interactions")
+      .text("of" + ofTotalInteraction)
 
     vis.append("text")
       .attr("x", 0)
