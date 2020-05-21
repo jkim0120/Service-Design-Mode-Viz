@@ -274,8 +274,6 @@ var jkmode = {
 
     function mouseover(d) {
 
-      console.log(id);
-
       var percentage = (100 * d.value / totalSize).toFixed(2);
       var percentageString = percentage + "%";
       if (percentage < 0.1) {
