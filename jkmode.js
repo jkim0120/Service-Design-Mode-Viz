@@ -145,7 +145,7 @@ var jkmode = {
       .attr("class", "mode-sunburst-explanation mode-sunburst-explanation-" + id)
       .attr("id", "of-total-interactions-" + id)
       .style("visibility", "hidden")
-      .text("of" + ofTotalInteraction)
+      .text("of " + ofTotalInteraction)
 
     vis.append("text")
       .attr("x", 0)
